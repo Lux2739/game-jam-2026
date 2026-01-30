@@ -1,0 +1,17 @@
+# Godot cache
+.import/
+.godot/
+.godot/shader_cache/
+.godot/asset_library/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Linux swap files
+*.swp
+*~
+
+# Builds
+export/
+
