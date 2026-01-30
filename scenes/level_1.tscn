@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://j62f5sp3dsc5"]
+
+[ext_resource type="Texture2D" uid="uid://lctg45bnh1vv" path="res://assets/bg1.webp" id="1_014kd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gkh53"]
+size = Vector2(1153, 19)
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_014kd"]
+
+[node name="Level1" type="Node2D" unique_id=1335290165]
+
+[node name="sol" type="StaticBody2D" parent="." unique_id=1484616053]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sol" unique_id=1779146541]
+position = Vector2(576.5, 657.5)
+shape = SubResource("RectangleShape2D_gkh53")
+
+[node name="Sprite2D" type="Sprite2D" parent="sol" unique_id=1717992797]
+position = Vector2(576, 658)
+scale = Vector2(2.2500002, 0.036133025)
+texture = SubResource("NoiseTexture2D_014kd")
+
+[node name="sol2" type="StaticBody2D" parent="." unique_id=2038282778]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sol2" unique_id=2009530036]
+position = Vector2(577, -9)
+shape = SubResource("RectangleShape2D_gkh53")
+
+[node name="Sprite2D" type="Sprite2D" parent="sol2" unique_id=1034097315]
+position = Vector2(576.00006, -9)
+scale = Vector2(2.2500002, 0.036133025)
+texture = SubResource("NoiseTexture2D_014kd")
+
+[node name="mur" type="StaticBody2D" parent="." unique_id=1398726090]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="mur" unique_id=629393532]
+position = Vector2(1161, 333)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_gkh53")
+
+[node name="Sprite2D" type="Sprite2D" parent="mur" unique_id=1382336607]
+position = Vector2(1161.6443, 332.58408)
+rotation = 1.5707964
+scale = Vector2(1.2990302, 0.037522968)
+texture = SubResource("NoiseTexture2D_014kd")
+
+[node name="mur2" type="StaticBody2D" parent="." unique_id=750936162]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="mur2" unique_id=189382984]
+position = Vector2(-9, 391)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_gkh53")
+
+[node name="Sprite2D" type="Sprite2D" parent="mur2" unique_id=2109034950]
+position = Vector2(-9, 332)
+rotation = 1.5707964
+scale = Vector2(1.2990302, 0.037522968)
+texture = SubResource("NoiseTexture2D_014kd")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=836408704]
+offset_left = -21.0
+offset_top = -73.0
+offset_right = 1172.0
+offset_bottom = 721.0
+texture = ExtResource("1_014kd")
