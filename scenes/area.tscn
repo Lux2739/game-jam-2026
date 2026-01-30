@@ -1,5 +1,0 @@
-[gd_scene format=3 uid="uid://csufhh2nrgt51"]
-
-[node name="Node2D" type="Node2D" unique_id=77290507]
-
-[node name="Area2D" type="Area2D" parent="." unique_id=249589559]
