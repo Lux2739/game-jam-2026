@@ -39,7 +39,7 @@ glow_enabled = true
 glow_hdr_threshold = 2.32
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pa8r4"]
-size = Vector2(90, 168)
+size = Vector2(114, 103)
 
 [node name="Level1" type="Node2D" unique_id=1335290165]
 position = Vector2(4, -2)

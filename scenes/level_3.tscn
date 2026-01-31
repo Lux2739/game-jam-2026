@@ -1,12 +1,12 @@
-[gd_scene format=3 uid="uid://ceh01vu1lcw45"]
+[gd_scene format=3 uid="uid://c5pqkodiaomng"]
 
-[ext_resource type="Texture2D" uid="uid://lctg45bnh1vv" path="res://assets/bg1.webp" id="1_b4j7a"]
-[ext_resource type="Script" uid="uid://bsjc5bd1owtne" path="res://scenes/area_2d.gd" id="2_wo48x"]
-[ext_resource type="Texture2D" uid="uid://b57ohx4mp6uwc" path="res://assets/light.png" id="3_y0kc7"]
-[ext_resource type="PackedScene" uid="uid://ct0ki0rvttwr1" path="res://scenes/player.tscn" id="4_ne2mo"]
-[ext_resource type="Script" uid="uid://0vqfe7qwxhe8" path="res://scenes/kill_zone.gd" id="5_6cvei"]
-[ext_resource type="Texture2D" uid="uid://cocynij1r5esn" path="res://assets/cage.png" id="7_ne2mo"]
-[ext_resource type="Script" uid="uid://de5rqrkskyi6a" path="res://scenes/fin_niveau_2.gd" id="7_y0kc7"]
+[ext_resource type="Texture2D" uid="uid://lctg45bnh1vv" path="res://assets/bg1.webp" id="1_hhfj6"]
+[ext_resource type="Texture2D" uid="uid://cocynij1r5esn" path="res://assets/cage.png" id="2_wae8j"]
+[ext_resource type="Script" uid="uid://bsjc5bd1owtne" path="res://scenes/area_2d.gd" id="3_ha73p"]
+[ext_resource type="Texture2D" uid="uid://b57ohx4mp6uwc" path="res://assets/light.png" id="4_vcx5n"]
+[ext_resource type="PackedScene" uid="uid://ct0ki0rvttwr1" path="res://scenes/player.tscn" id="5_56dhn"]
+[ext_resource type="Script" uid="uid://0vqfe7qwxhe8" path="res://scenes/kill_zone.gd" id="6_ax3dk"]
+[ext_resource type="Script" uid="uid://cnfnuqb28gwtl" path="res://scenes/fin_niveau.gd" id="7_q2dsb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gkh53"]
 size = Vector2(1153, 19)
@@ -36,7 +36,7 @@ glow_hdr_threshold = 2.32
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pa8r4"]
 size = Vector2(114, 103)
 
-[node name="Level2" type="Node2D" unique_id=1335290165]
+[node name="Level3" type="Node2D" unique_id=1335290165]
 position = Vector2(4, -2)
 
 [node name="sol" type="StaticBody2D" parent="." unique_id=1484616053]
@@ -93,7 +93,7 @@ offset_left = -21.0
 offset_top = -72.0
 offset_right = 1172.0
 offset_bottom = 722.0
-texture = ExtResource("1_b4j7a")
+texture = ExtResource("1_hhfj6")
 
 [node name="reveal_platform" type="Node2D" parent="." unique_id=640354119]
 position = Vector2(4, 0)
@@ -147,7 +147,7 @@ scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
 [node name="platform16" type="StaticBody2D" parent="reveal_platform" unique_id=915356862]
-position = Vector2(550, -109)
+position = Vector2(667, 79)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform16" unique_id=997071283]
 position = Vector2(281.5, 539)
@@ -256,12 +256,12 @@ texture = SubResource("NoiseTexture2D_que50")
 [node name="Sprite2D" type="Sprite2D" parent="reveal_platform" unique_id=1182610358]
 position = Vector2(1092.0001, 79.00003)
 scale = Vector2(0.45, 0.5777778)
-texture = ExtResource("7_ne2mo")
+texture = ExtResource("2_wae8j")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1026857066 node_paths=PackedStringArray("platforms_parent")]
 modulate = Color(2.055, 2.055, 2.055, 1)
 position = Vector2(714, 19)
-script = ExtResource("2_wo48x")
+script = ExtResource("3_ha73p")
 platforms_parent = NodePath("../reveal_platform")
 
 [node name="PointLight2D" type="PointLight2D" parent="Area2D" unique_id=1533822326]
@@ -270,18 +270,18 @@ position = Vector2(373.00006, 579.9219)
 scale = Vector2(0.103027344, 0.1268005)
 color = Color(1.5565991, 1.5565991, 1.5565991, 1)
 energy = 16.0
-texture = ExtResource("3_y0kc7")
+texture = ExtResource("4_vcx5n")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=24848970]
 position = Vector2(372, 553)
 shape = SubResource("RectangleShape2D_fcfvj")
 
-[node name="Player" parent="." unique_id=874490068 groups=["player"] instance=ExtResource("4_ne2mo")]
-position = Vector2(295, 273)
+[node name="Player" parent="." unique_id=874490068 groups=["player"] instance=ExtResource("5_56dhn")]
+position = Vector2(296, 273)
 
 [node name="killZone" type="Area2D" parent="." unique_id=1919892500]
 position = Vector2(45, -11)
-script = ExtResource("5_6cvei")
+script = ExtResource("6_ax3dk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killZone" unique_id=1333061443]
 position = Vector2(718, 183)
@@ -292,11 +292,11 @@ position = Vector2(718.00006, 196)
 scale = Vector2(0.23867789, 0.22915646)
 color = Color(18.892157, 0, 0, 1)
 energy = 1.74
-texture = ExtResource("3_y0kc7")
+texture = ExtResource("4_vcx5n")
 
 [node name="killZone2" type="Area2D" parent="." unique_id=673372212]
 position = Vector2(-354, 225)
-script = ExtResource("5_6cvei")
+script = ExtResource("6_ax3dk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killZone2" unique_id=1820709745]
 position = Vector2(721, 220)
@@ -307,7 +307,7 @@ position = Vector2(725, 221.99998)
 scale = Vector2(0.29003906, 0.274414)
 color = Color(18.892157, 0, 0, 1)
 energy = 1.74
-texture = ExtResource("3_y0kc7")
+texture = ExtResource("4_vcx5n")
 
 [node name="SpawnPoint" type="Marker2D" parent="." unique_id=1283383442]
 position = Vector2(367, 630)
@@ -315,11 +315,11 @@ position = Vector2(367, 630)
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2060796725]
 environment = SubResource("Environment_fcfvj")
 
-[node name="FinNiveau2" type="Area2D" parent="." unique_id=379918643]
+[node name="FinNiveau" type="Area2D" parent="." unique_id=379918643]
 position = Vector2(-6, -10)
-script = ExtResource("7_y0kc7")
+script = ExtResource("7_q2dsb")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="FinNiveau2" unique_id=175858394]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FinNiveau" unique_id=175858394]
 position = Vector2(1087, 87.5)
 shape = SubResource("RectangleShape2D_pa8r4")
 
