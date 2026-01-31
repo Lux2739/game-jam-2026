@@ -96,6 +96,7 @@ offset_bottom = 722.0
 texture = ExtResource("1_b4j7a")
 
 [node name="reveal_platform" type="Node2D" parent="." unique_id=640354119]
+visible = false
 position = Vector2(4, 0)
 
 [node name="platform8" type="StaticBody2D" parent="reveal_platform" unique_id=186561940]
