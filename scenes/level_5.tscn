@@ -98,12 +98,11 @@ offset_bottom = 722.0
 texture = ExtResource("1_ak5vt")
 
 [node name="reveal_platform" type="Node2D" parent="." unique_id=640354119]
-visible = false
 position = Vector2(4, 0)
 
 [node name="platform8" type="StaticBody2D" parent="reveal_platform" unique_id=186561940]
-position = Vector2(500.99994, -78.99997)
-rotation = 0.6981317
+position = Vector2(358.99994, -77.99999)
+rotation = 0.30543262
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform8" unique_id=810958766]
 position = Vector2(281.5, 539)
@@ -115,7 +114,7 @@ scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
 [node name="platform9" type="StaticBody2D" parent="reveal_platform" unique_id=312166720]
-position = Vector2(806, 161)
+position = Vector2(860, 152)
 rotation = 1.5707964
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform9" unique_id=1989619281]
@@ -128,7 +127,7 @@ scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
 [node name="platform10" type="StaticBody2D" parent="reveal_platform" unique_id=945573800]
-position = Vector2(917, -208)
+position = Vector2(910, -210.00002)
 rotation = 1.0471976
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform10" unique_id=777015512]
@@ -151,45 +150,6 @@ shape = SubResource("RectangleShape2D_5xbjy")
 [node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform11" unique_id=1805135419]
 position = Vector2(281.99997, 539.00006)
 scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
-
-[node name="platform12" type="StaticBody2D" parent="reveal_platform" unique_id=2080166092]
-position = Vector2(2027, 95)
-rotation = 1.5707964
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform12" unique_id=645691304]
-position = Vector2(281.5, 539)
-shape = SubResource("RectangleShape2D_5xbjy")
-
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform12" unique_id=380367091]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
-
-[node name="platform13" type="StaticBody2D" parent="reveal_platform" unique_id=878040162]
-position = Vector2(2055, -271)
-rotation = 1.5707964
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform13" unique_id=351879230]
-position = Vector2(758.00006, 806)
-shape = SubResource("RectangleShape2D_5xbjy")
-
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform13" unique_id=1103492024]
-position = Vector2(759.00006, 806.0001)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
-
-[node name="platform14" type="StaticBody2D" parent="reveal_platform" unique_id=2108889744]
-position = Vector2(1554, 182)
-rotation = 1.5707964
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform14" unique_id=1349480689]
-position = Vector2(162.00003, 299)
-shape = SubResource("RectangleShape2D_5xbjy")
-
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform14" unique_id=2093605907]
-position = Vector2(161, 299.9999)
-scale = Vector2(0.14788446, 0.05658709)
 texture = SubResource("NoiseTexture2D_4nkto")
 
 [node name="platform16" type="StaticBody2D" parent="reveal_platform" unique_id=922796486]
@@ -219,7 +179,7 @@ scale = Vector2(0.14788446, 0.05658709)
 texture = SubResource("NoiseTexture2D_4nkto")
 
 [node name="platform15" type="StaticBody2D" parent="reveal_platform" unique_id=2143384269]
-position = Vector2(1688, 66)
+position = Vector2(1678, 60)
 rotation = 1.5707964
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform15" unique_id=476678041]
@@ -232,7 +192,7 @@ scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
 [node name="platform17" type="StaticBody2D" parent="reveal_platform" unique_id=827256838]
-position = Vector2(1617, -91)
+position = Vector2(1611, -85)
 rotation = 1.5707964
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform17" unique_id=1542945013]

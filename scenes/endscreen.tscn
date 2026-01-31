@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://uhvmrs6golf"]
+
+[ext_resource type="Script" uid="uid://bkvxqbem0oxvg" path="res://endscreen.gd" id="1_dt0yg"]
+
+[node name="Endscreen" type="Control" unique_id=363204762]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dt0yg")
+
+[node name="Button" type="Button" parent="." unique_id=403551505]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Label" type="Label" parent="." unique_id=2011093425]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -107.75
+offset_top = -45.75
+offset_right = 109.75
+offset_bottom = 45.75
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "BRAVO !"
+
+[node name="TimeLabel" type="Label" parent="." unique_id=418905182]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -453.0
+offset_top = -287.0
+offset_right = 505.0
+offset_bottom = -153.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 50

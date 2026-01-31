@@ -1,12 +1,8 @@
 extends Area2D
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
+@export var end = preload("res://scenes/endscreen.tscn")
+func _ready():
+	body_entered.connect(_on_body_entered)
 
 func _on_body_entered(_body):
 	GameTimer.stop()
-	print("Temps final :", GameTimer.get_time_text())
+	get_tree().change_scene_to_packed(end)

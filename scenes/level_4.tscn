@@ -24,11 +24,6 @@ size = Vector2(122, 23)
 
 [sub_resource type="NoiseTexture2D" id="NoiseTexture2D_que50"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_x7blo"]
-size = Vector2(25, 306)
-
-[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_qsmat"]
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fcfvj"]
 size = Vector2(99.5, 146.5)
 
@@ -103,11 +98,10 @@ offset_bottom = 722.0
 texture = ExtResource("1_x7blo")
 
 [node name="reveal_platform" type="Node2D" parent="." unique_id=640354119]
-visible = false
 position = Vector2(4, 0)
 
 [node name="platform8" type="StaticBody2D" parent="reveal_platform" unique_id=186561940]
-position = Vector2(869, -117)
+position = Vector2(600, 69)
 rotation = 1.5707964
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform8" unique_id=810958766]
@@ -119,431 +113,204 @@ position = Vector2(281.99997, 539.00006)
 scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
-[node name="platform41" type="StaticBody2D" parent="reveal_platform" unique_id=534828208]
-position = Vector2(1069, 393)
+[node name="platform11" type="StaticBody2D" parent="reveal_platform" unique_id=1489750033]
+position = Vector2(717, -48)
 rotation = 1.5707964
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform41" unique_id=1033420104]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform11" unique_id=1164551472]
 position = Vector2(281.5, 539)
 shape = SubResource("RectangleShape2D_5xbjy")
 
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform41" unique_id=1630487082]
+[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform11" unique_id=400299772]
 position = Vector2(281.99997, 539.00006)
 scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
-[node name="platform39" type="StaticBody2D" parent="reveal_platform" unique_id=431239967]
-position = Vector2(1391, -105)
-rotation = 1.5707964
+[node name="platform15" type="StaticBody2D" parent="reveal_platform" unique_id=1182868067]
+position = Vector2(469, -48)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform39" unique_id=1174391879]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform15" unique_id=1941072727]
 position = Vector2(281.5, 539)
 shape = SubResource("RectangleShape2D_5xbjy")
 
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform39" unique_id=1349874095]
+[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform15" unique_id=360714357]
 position = Vector2(281.99997, 539.00006)
 scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
-[node name="platform40" type="StaticBody2D" parent="reveal_platform" unique_id=1828738946]
-position = Vector2(1500, -338)
-rotation = 1.5707964
+[node name="platform23" type="StaticBody2D" parent="reveal_platform" unique_id=1131416246]
+position = Vector2(1114, 31.00003)
+rotation = 1.2374384
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform40" unique_id=231697946]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform23" unique_id=1062053791]
 position = Vector2(281.5, 539)
 shape = SubResource("RectangleShape2D_5xbjy")
 
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform40" unique_id=1599931569]
+[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform23" unique_id=203696623]
 position = Vector2(281.99997, 539.00006)
 scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
-[node name="platform23" type="StaticBody2D" parent="reveal_platform" unique_id=1631724396]
-position = Vector2(986, 381)
-rotation = 1.5707964
+[node name="platform16" type="StaticBody2D" parent="reveal_platform" unique_id=46523741]
+position = Vector2(531, -44)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform23" unique_id=1282309775]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform16" unique_id=229011066]
 position = Vector2(281.5, 539)
 shape = SubResource("RectangleShape2D_5xbjy")
 
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform23" unique_id=2119283995]
+[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform16" unique_id=884927913]
 position = Vector2(281.99997, 539.00006)
 scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
-[node name="platform24" type="StaticBody2D" parent="reveal_platform" unique_id=78614624]
-position = Vector2(1018, 390)
-rotation = 1.5707964
+[node name="platform24" type="StaticBody2D" parent="reveal_platform" unique_id=662915515]
+position = Vector2(-186, -86)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform24" unique_id=494644951]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform24" unique_id=1449145058]
 position = Vector2(281.5, 539)
 shape = SubResource("RectangleShape2D_5xbjy")
 
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform24" unique_id=1754517686]
+[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform24" unique_id=1492879579]
 position = Vector2(281.99997, 539.00006)
 scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
-[node name="platform25" type="StaticBody2D" parent="reveal_platform" unique_id=2025128647]
-position = Vector2(1053, 395)
-rotation = 1.5707964
+[node name="platform25" type="StaticBody2D" parent="reveal_platform" unique_id=455726209]
+position = Vector2(-256, -84)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform25" unique_id=827506640]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform25" unique_id=214796493]
 position = Vector2(281.5, 539)
 shape = SubResource("RectangleShape2D_5xbjy")
 
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform25" unique_id=1186521001]
+[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform25" unique_id=1622659501]
 position = Vector2(281.99997, 539.00006)
 scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
-[node name="platform26" type="StaticBody2D" parent="reveal_platform" unique_id=449067698]
-position = Vector2(1092, 393)
-rotation = 1.5707964
+[node name="platform17" type="StaticBody2D" parent="reveal_platform" unique_id=2028234068]
+position = Vector2(604, -42)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform26" unique_id=172215153]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform17" unique_id=1078034294]
 position = Vector2(281.5, 539)
 shape = SubResource("RectangleShape2D_5xbjy")
 
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform26" unique_id=1709783871]
+[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform17" unique_id=170524880]
 position = Vector2(281.99997, 539.00006)
 scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
-[node name="platform27" type="StaticBody2D" parent="reveal_platform" unique_id=294493085]
-position = Vector2(1127, 393)
-rotation = 1.5707964
+[node name="platform18" type="StaticBody2D" parent="reveal_platform" unique_id=1659080625]
+position = Vector2(679, -52)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform27" unique_id=1607887791]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform18" unique_id=981375723]
 position = Vector2(281.5, 539)
 shape = SubResource("RectangleShape2D_5xbjy")
 
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform27" unique_id=143686122]
+[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform18" unique_id=687896688]
 position = Vector2(281.99997, 539.00006)
 scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
-[node name="platform28" type="StaticBody2D" parent="reveal_platform" unique_id=1082249078]
-position = Vector2(1162, 393)
+[node name="platform19" type="StaticBody2D" parent="reveal_platform" unique_id=1159445969]
+position = Vector2(1578, 121)
 rotation = 1.5707964
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform28" unique_id=394180327]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform19" unique_id=285893868]
 position = Vector2(281.5, 539)
 shape = SubResource("RectangleShape2D_5xbjy")
 
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform28" unique_id=692516677]
+[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform19" unique_id=590505231]
 position = Vector2(281.99997, 539.00006)
 scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
-[node name="platform29" type="StaticBody2D" parent="reveal_platform" unique_id=1686752771]
-position = Vector2(1162, 393)
+[node name="platform20" type="StaticBody2D" parent="reveal_platform" unique_id=1753771565]
+position = Vector2(1495, 28)
 rotation = 1.5707964
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform29" unique_id=1882404960]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform20" unique_id=2079583549]
 position = Vector2(281.5, 539)
 shape = SubResource("RectangleShape2D_5xbjy")
 
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform29" unique_id=1598939663]
+[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform20" unique_id=503562159]
 position = Vector2(281.99997, 539.00006)
 scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
-[node name="platform30" type="StaticBody2D" parent="reveal_platform" unique_id=548669608]
-position = Vector2(1207, 393)
+[node name="platform21" type="StaticBody2D" parent="reveal_platform" unique_id=787831562]
+position = Vector2(1550, -148)
 rotation = 1.5707964
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform30" unique_id=1594886627]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform21" unique_id=1971214434]
 position = Vector2(281.5, 539)
 shape = SubResource("RectangleShape2D_5xbjy")
 
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform30" unique_id=336135129]
+[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform21" unique_id=713700836]
 position = Vector2(281.99997, 539.00006)
 scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
-[node name="platform32" type="StaticBody2D" parent="reveal_platform" unique_id=2068095699]
-position = Vector2(1182, 393)
+[node name="platform22" type="StaticBody2D" parent="reveal_platform" unique_id=1274281271]
+position = Vector2(1429, -110)
 rotation = 1.5707964
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform32" unique_id=398877217]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform22" unique_id=366708989]
 position = Vector2(281.5, 539)
 shape = SubResource("RectangleShape2D_5xbjy")
 
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform32" unique_id=172577813]
+[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform22" unique_id=1018247850]
 position = Vector2(281.99997, 539.00006)
 scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
-[node name="platform31" type="StaticBody2D" parent="reveal_platform" unique_id=1723638821]
-position = Vector2(1256, 359)
+[node name="platform12" type="StaticBody2D" parent="reveal_platform" unique_id=1434763914]
+position = Vector2(1010, 4)
 rotation = 1.5707964
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform31" unique_id=2058982571]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform12" unique_id=1198424473]
 position = Vector2(281.5, 539)
 shape = SubResource("RectangleShape2D_5xbjy")
 
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform31" unique_id=1778883121]
+[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform12" unique_id=510033254]
 position = Vector2(281.99997, 539.00006)
 scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
-[node name="platform33" type="StaticBody2D" parent="reveal_platform" unique_id=1491948421]
-position = Vector2(1316, 310)
+[node name="platform13" type="StaticBody2D" parent="reveal_platform" unique_id=1157064684]
+position = Vector2(1114, 124)
 rotation = 1.5707964
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform33" unique_id=1862070973]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform13" unique_id=281747924]
 position = Vector2(281.5, 539)
 shape = SubResource("RectangleShape2D_5xbjy")
 
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform33" unique_id=1246127155]
+[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform13" unique_id=936318450]
 position = Vector2(281.99997, 539.00006)
 scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
-[node name="platform34" type="StaticBody2D" parent="reveal_platform" unique_id=594575416]
-position = Vector2(1344, 255)
+[node name="platform9" type="StaticBody2D" parent="reveal_platform" unique_id=778640130]
+position = Vector2(682, 190)
 rotation = 1.5707964
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform34" unique_id=1992201525]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform9" unique_id=1984427523]
 position = Vector2(281.5, 539)
 shape = SubResource("RectangleShape2D_5xbjy")
 
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform34" unique_id=2027298621]
+[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform9" unique_id=395274439]
 position = Vector2(281.99997, 539.00006)
 scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
-[node name="platform35" type="StaticBody2D" parent="reveal_platform" unique_id=1972574475]
-position = Vector2(1247, 184)
+[node name="platform10" type="StaticBody2D" parent="reveal_platform" unique_id=738219749]
+position = Vector2(772, 314)
 rotation = 1.5707964
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform35" unique_id=321446255]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform10" unique_id=793557623]
 position = Vector2(281.5, 539)
 shape = SubResource("RectangleShape2D_5xbjy")
 
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform35" unique_id=2055086690]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
-
-[node name="platform36" type="StaticBody2D" parent="reveal_platform" unique_id=567715694]
-position = Vector2(1187, 90)
-rotation = 1.5707964
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform36" unique_id=1208280182]
-position = Vector2(281.5, 539)
-shape = SubResource("RectangleShape2D_5xbjy")
-
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform36" unique_id=897284142]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
-
-[node name="platform37" type="StaticBody2D" parent="reveal_platform" unique_id=638270384]
-position = Vector2(1337, -14)
-rotation = 1.5707964
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform37" unique_id=1635152568]
-position = Vector2(281.5, 539)
-shape = SubResource("RectangleShape2D_5xbjy")
-
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform37" unique_id=1137960847]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
-
-[node name="platform38" type="StaticBody2D" parent="reveal_platform" unique_id=1862461471]
-position = Vector2(2011, 5)
-rotation = 1.5707964
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform38" unique_id=645137182]
-position = Vector2(281.5, 539)
-shape = SubResource("RectangleShape2D_5xbjy")
-
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform38" unique_id=488786214]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
-
-[node name="platform10" type="StaticBody2D" parent="reveal_platform" unique_id=1695250658]
-position = Vector2(614, 230)
-rotation = 1.5707964
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform10" unique_id=1231733174]
-position = Vector2(281.5, 539)
-shape = SubResource("RectangleShape2D_5xbjy")
-
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform10" unique_id=1078473974]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
-
-[node name="platform11" type="StaticBody2D" parent="reveal_platform" unique_id=1743230900]
-position = Vector2(559, 143)
-rotation = 1.5707964
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform11" unique_id=2019961821]
-position = Vector2(281.5, 539)
-shape = SubResource("RectangleShape2D_5xbjy")
-
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform11" unique_id=928392423]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
-
-[node name="platform19" type="StaticBody2D" parent="reveal_platform" unique_id=2095527252]
-position = Vector2(927, 318)
-rotation = 1.5707964
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform19" unique_id=1018891979]
-position = Vector2(281.5, 539)
-shape = SubResource("RectangleShape2D_5xbjy")
-
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform19" unique_id=564752928]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
-
-[node name="platform12" type="StaticBody2D" parent="reveal_platform" unique_id=1727322846]
-position = Vector2(617, 49)
-rotation = 1.5707964
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform12" unique_id=495162522]
-position = Vector2(281.5, 539)
-shape = SubResource("RectangleShape2D_5xbjy")
-
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform12" unique_id=169748741]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
-
-[node name="platform13" type="StaticBody2D" parent="reveal_platform" unique_id=152407628]
-position = Vector2(555, -27)
-rotation = 1.5707964
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform13" unique_id=42670763]
-position = Vector2(281.5, 539)
-shape = SubResource("RectangleShape2D_5xbjy")
-
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform13" unique_id=675204334]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
-
-[node name="platform14" type="StaticBody2D" parent="reveal_platform" unique_id=612833134]
-position = Vector2(725, -121)
-rotation = 1.5707964
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform14" unique_id=1092726956]
-position = Vector2(281.5, 539)
-shape = SubResource("RectangleShape2D_5xbjy")
-
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform14" unique_id=1045574212]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
-
-[node name="platform21" type="StaticBody2D" parent="reveal_platform" unique_id=140246711]
-position = Vector2(954, 380)
-rotation = 1.5707964
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform21" unique_id=988694090]
-position = Vector2(281.5, 539)
-shape = SubResource("RectangleShape2D_5xbjy")
-
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform21" unique_id=1436308000]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
-
-[node name="platform22" type="StaticBody2D" parent="reveal_platform" unique_id=1414600733]
-position = Vector2(954, 380)
-rotation = 1.5707964
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform22" unique_id=699553106]
-position = Vector2(281.5, 539)
-shape = SubResource("RectangleShape2D_5xbjy")
-
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform22" unique_id=1636550225]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
-
-[node name="platform15" type="StaticBody2D" parent="reveal_platform" unique_id=138874236]
-position = Vector2(925, -27)
-rotation = 1.5707964
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform15" unique_id=1642406222]
-position = Vector2(281.5, 539)
-shape = SubResource("RectangleShape2D_5xbjy")
-
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform15" unique_id=258721155]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
-
-[node name="platform16" type="StaticBody2D" parent="reveal_platform" unique_id=1734598794]
-position = Vector2(1019, 90)
-rotation = 1.5707964
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform16" unique_id=1727478638]
-position = Vector2(281.5, 539)
-shape = SubResource("RectangleShape2D_5xbjy")
-
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform16" unique_id=1918800317]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
-
-[node name="platform17" type="StaticBody2D" parent="reveal_platform" unique_id=340404060]
-position = Vector2(968, 170)
-rotation = 1.5707964
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform17" unique_id=137518252]
-position = Vector2(281.5, 539)
-shape = SubResource("RectangleShape2D_5xbjy")
-
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform17" unique_id=2003848546]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
-
-[node name="platform18" type="StaticBody2D" parent="reveal_platform" unique_id=850691569]
-position = Vector2(968, 170)
-rotation = 1.5707964
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform18" unique_id=712434248]
-position = Vector2(281.5, 539)
-shape = SubResource("RectangleShape2D_5xbjy")
-
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform18" unique_id=840135247]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
-
-[node name="platform20" type="StaticBody2D" parent="reveal_platform" unique_id=508543635]
-position = Vector2(968, 170)
-rotation = 1.5707964
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform20" unique_id=1228418789]
-position = Vector2(281.5, 539)
-shape = SubResource("RectangleShape2D_5xbjy")
-
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform20" unique_id=584804532]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
-
-[node name="platform9" type="StaticBody2D" parent="reveal_platform" unique_id=2048966880]
-position = Vector2(557, 319)
-rotation = 1.5707964
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform9" unique_id=1730760553]
-position = Vector2(281.5, 539)
-shape = SubResource("RectangleShape2D_5xbjy")
-
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform9" unique_id=833674469]
+[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform10" unique_id=688431341]
 position = Vector2(281.99997, 539.00006)
 scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
@@ -564,43 +331,9 @@ position = Vector2(1092.0001, 79.00003)
 scale = Vector2(0.45, 0.5777778)
 texture = ExtResource("2_qsmat")
 
-[node name="StaticBody2D2" type="StaticBody2D" parent="reveal_platform" unique_id=2081315358]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/StaticBody2D2" unique_id=1114105595]
-position = Vector2(551, 151)
-shape = SubResource("RectangleShape2D_x7blo")
-
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/StaticBody2D2" unique_id=54705524]
-position = Vector2(552, 153)
-scale = Vector2(0.045898486, 0.5996094)
-texture = SubResource("NoiseTexture2D_qsmat")
-
-[node name="StaticBody2D3" type="StaticBody2D" parent="reveal_platform" unique_id=298758475]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/StaticBody2D3" unique_id=1919377145]
-position = Vector2(551, 151)
-shape = SubResource("RectangleShape2D_x7blo")
-
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/StaticBody2D3" unique_id=1971156215]
-position = Vector2(552, 153)
-scale = Vector2(0.045898486, 0.5996094)
-texture = SubResource("NoiseTexture2D_qsmat")
-
-[node name="StaticBody2D4" type="StaticBody2D" parent="reveal_platform" unique_id=1051365922]
-position = Vector2(-296, 344)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/StaticBody2D4" unique_id=600490877]
-position = Vector2(551, 151)
-shape = SubResource("RectangleShape2D_x7blo")
-
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/StaticBody2D4" unique_id=1282535231]
-position = Vector2(552, 153)
-scale = Vector2(0.045898486, 0.5996094)
-texture = SubResource("NoiseTexture2D_qsmat")
-
 [node name="Area2D" type="Area2D" parent="." unique_id=1026857066 node_paths=PackedStringArray("platforms_parent")]
 modulate = Color(2.055, 2.055, 2.055, 1)
-position = Vector2(-171, 19)
+position = Vector2(728, 17)
 script = ExtResource("3_yk4f3")
 platforms_parent = NodePath("../reveal_platform")
 
@@ -617,10 +350,10 @@ position = Vector2(372, 553)
 shape = SubResource("RectangleShape2D_fcfvj")
 
 [node name="Player" parent="." unique_id=874490068 groups=["player"] instance=ExtResource("5_rr1tt")]
-position = Vector2(52, 270)
+position = Vector2(912, 270)
 
 [node name="killZone" type="Area2D" parent="." unique_id=1919892500]
-position = Vector2(221, 76)
+position = Vector2(-621, 390)
 script = ExtResource("6_7ewpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killZone" unique_id=1333061443]
@@ -635,7 +368,7 @@ energy = 1.74
 texture = ExtResource("4_cp0rv")
 
 [node name="killZone2" type="Area2D" parent="." unique_id=673372212]
-position = Vector2(-464, 27)
+position = Vector2(-264, 174)
 script = ExtResource("6_7ewpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killZone2" unique_id=1820709745]
@@ -650,7 +383,7 @@ energy = 1.74
 texture = ExtResource("4_cp0rv")
 
 [node name="killZone3" type="Area2D" parent="." unique_id=925682586]
-position = Vector2(-155, 216)
+position = Vector2(102, 34)
 script = ExtResource("6_7ewpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killZone3" unique_id=1576311427]
@@ -671,11 +404,11 @@ position = Vector2(367, 630)
 environment = SubResource("Environment_fcfvj")
 
 [node name="hjqsgfkjsdhfkjss" type="Area2D" parent="." unique_id=379918643]
-position = Vector2(-2, -8)
+position = Vector2(1, 2)
 script = ExtResource("7_x7blo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hjqsgfkjsdhfkjss" unique_id=175858394]
-position = Vector2(1087, 87.5)
+position = Vector2(1087, 76)
 shape = SubResource("RectangleShape2D_pa8r4")
 
 [node name="TimerLabel4" type="Label" parent="." unique_id=741917571]
