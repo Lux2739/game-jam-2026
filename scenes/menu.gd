@@ -12,6 +12,7 @@ func _process(delta: float) -> void:
 
 
 func _on_start_button_down() -> void:
+	GameTimer.start()
 	get_tree().change_scene_to_packed(first_level)
 
 

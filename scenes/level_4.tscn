@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://ucgh73bvhvig"]
 
+[ext_resource type="Script" uid="uid://c3f4mueeu1jx6" path="res://scenes/level_4.gd" id="1_qsmat"]
 [ext_resource type="Texture2D" uid="uid://lctg45bnh1vv" path="res://assets/bg1.webp" id="1_x7blo"]
 [ext_resource type="Texture2D" uid="uid://cocynij1r5esn" path="res://assets/cage.png" id="2_qsmat"]
 [ext_resource type="Script" uid="uid://bsjc5bd1owtne" path="res://scenes/area_2d.gd" id="3_yk4f3"]
@@ -43,6 +44,7 @@ size = Vector2(114, 103)
 
 [node name="Level4" type="Node2D" unique_id=1335290165]
 position = Vector2(4, -2)
+script = ExtResource("1_qsmat")
 
 [node name="sol" type="StaticBody2D" parent="." unique_id=1484616053]
 
@@ -675,6 +677,10 @@ script = ExtResource("7_x7blo")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hjqsgfkjsdhfkjss" unique_id=175858394]
 position = Vector2(1087, 87.5)
 shape = SubResource("RectangleShape2D_pa8r4")
+
+[node name="TimerLabel4" type="Label" parent="." unique_id=741917571]
+offset_right = 40.0
+offset_bottom = 23.0
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]

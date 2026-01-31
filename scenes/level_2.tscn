@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ceh01vu1lcw45"]
 
 [ext_resource type="Texture2D" uid="uid://lctg45bnh1vv" path="res://assets/bg1.webp" id="1_b4j7a"]
+[ext_resource type="Script" uid="uid://jcvmfs7bofsw" path="res://scenes/level_2.gd" id="1_ne2mo"]
 [ext_resource type="Script" uid="uid://bsjc5bd1owtne" path="res://scenes/area_2d.gd" id="2_wo48x"]
 [ext_resource type="Texture2D" uid="uid://b57ohx4mp6uwc" path="res://assets/light.png" id="3_y0kc7"]
 [ext_resource type="PackedScene" uid="uid://ct0ki0rvttwr1" path="res://scenes/player.tscn" id="4_ne2mo"]
@@ -38,6 +39,7 @@ size = Vector2(114, 103)
 
 [node name="Level2" type="Node2D" unique_id=1335290165]
 position = Vector2(4, -2)
+script = ExtResource("1_ne2mo")
 
 [node name="sol" type="StaticBody2D" parent="." unique_id=1484616053]
 
@@ -250,7 +252,7 @@ texture = ExtResource("7_ne2mo")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1026857066 node_paths=PackedStringArray("platforms_parent")]
 modulate = Color(2.055, 2.055, 2.055, 1)
-position = Vector2(-332, 19)
+position = Vector2(-213, 22)
 script = ExtResource("2_wo48x")
 platforms_parent = NodePath("../reveal_platform")
 
@@ -372,6 +374,10 @@ script = ExtResource("7_y0kc7")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FIN2555565665s" unique_id=175858394]
 position = Vector2(1087, 87.5)
 shape = SubResource("RectangleShape2D_pa8r4")
+
+[node name="TimerLabel2" type="Label" parent="." unique_id=379658253]
+offset_right = 40.0
+offset_bottom = 23.0
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]
