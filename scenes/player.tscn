@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://ct0ki0rvttwr1"]
 
 [ext_resource type="Script" uid="uid://dp21gh8grgx8s" path="res://scenes/player.gd" id="1_3vyb7"]
-[ext_resource type="Texture2D" uid="uid://iud5lfp5pv3n" path="res://assets/icon.svg" id="2_g2els"]
+[ext_resource type="Texture2D" uid="uid://rr016uv034tx" path="res://assets/robot beige tete gauche.png" id="2_g2els"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qhqgy"]
-size = Vector2(62, 61)
+size = Vector2(38.5, 104.5)
 
 [node name="Player" type="Node2D" unique_id=874490068]
 
@@ -13,10 +13,10 @@ position = Vector2(1, 0)
 script = ExtResource("1_3vyb7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1924623764]
-position = Vector2(84, 295.5)
+position = Vector2(117.25, 570.75)
 shape = SubResource("RectangleShape2D_qhqgy")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=18508996]
-position = Vector2(85, 297)
-scale = Vector2(0.4609374, 0.44921878)
+position = Vector2(123.250015, 561.75)
+scale = Vector2(0.03350001, 0.040375013)
 texture = ExtResource("2_g2els")

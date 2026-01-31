@@ -5,6 +5,8 @@ extends CharacterBody2D
 @export var jump_velocity: float = -500 
 @export var gravity: float = 1200       # Gravité
 var double_jump: int = 1;
+# Ajouter ceci en haut, après les variables
+@onready var sprite = $Sprite2D  # Assure-toi que c’est bien le chemin vers ton sprite
 
 func _physics_process(delta):
 	# ----- Mouvement horizontal -----
@@ -30,3 +32,6 @@ func _physics_process(delta):
 
 	# ----- Appliquer mouvement -----
 	move_and_slide()
+	# À la fin de _physics_process(delta), après move_and_slide()
+	if direction != 0:
+		sprite.scale.x = abs(sprite.scale.x) * -sign(direction)
