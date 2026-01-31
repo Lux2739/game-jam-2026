@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://dcgxewy88k71"]
+
+[ext_resource type="Script" uid="uid://xydxi3yuqo4" path="res://scenes/pause_menu.gd" id="1_n87rw"]
+
+[node name="PauseMenu" type="Control" unique_id=1410894784]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_n87rw")
+
+[node name="Panel" type="Panel" parent="." unique_id=1451089454]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=93770921]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -221.25
+offset_top = -69.5
+offset_right = 221.25
+offset_bottom = 69.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 25
+
+[node name="ResumeButton" type="Button" parent="Panel/VBoxContainer" unique_id=603440003]
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "Reprendre"
+
+[node name="MainMenuButton" type="Button" parent="Panel/VBoxContainer" unique_id=1896500822]
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "Menu Principal"
+
+[node name="Label" type="Label" parent="." unique_id=516460999]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -87.0
+offset_top = 96.0
+offset_right = 87.0
+offset_bottom = 179.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 60
+text = "Pause"

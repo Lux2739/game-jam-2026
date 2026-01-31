@@ -1,13 +1,10 @@
-# Level.gd
 extends Node2D
-# On peut exporter les zones et plateformes si besoin
-@export var reveal_zones: Array[NodePath] = []
+
+@onready var spawn = $SpawnPoint  # Marker2D du spawn
 
 func _ready():
-	# On pourrait initialiser les zones si nécessaire
-	for zone_path in reveal_zones:
-		var zone = get_node(zone_path)
-		if zone:
-			# Chaque zone pourrait être paramétrée ici
-			pass
-			
+	var player = get_tree().get_first_node_in_group("player")
+	if player:
+		player.set_spawn(spawn.global_position)
+	else:
+		print("ERREUR : Player non trouvé !")

@@ -1,37 +1,44 @@
 extends CharacterBody2D
 
-# ---- Config ----
-@export var speed: float = 300          # Vitesse de déplacement
-@export var jump_velocity: float = -500 
-@export var gravity: float = 1200       # Gravité
-var double_jump: int = 1;
-# Ajouter ceci en haut, après les variables
-@onready var sprite = $Sprite2D  # Assure-toi que c’est bien le chemin vers ton sprite
+@export var speed: float = 300
+@export var jump_velocity: float = -700
+@export var gravity: float = 2200
 
-func _physics_process(delta):
-	# ----- Mouvement horizontal -----
-	var direction = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
+var double_jump := 1
+var spawn_position: Vector2  # Point où le joueur respawnera
+
+@onready var sprite: Sprite2D = $Sprite2D
+
+# --- Définir le spawn point
+func set_spawn(pos: Vector2) -> void:
+	spawn_position = pos
+	print("Spawn défini :", spawn_position)
+
+# --- Mort / respawn
+func die() -> void:
+	print("PLAYER DIED")
+	global_position = spawn_position
+	velocity = Vector2.ZERO
+
+# --- Déplacement
+func _physics_process(delta: float) -> void:
+	var direction := Input.get_axis("ui_left", "ui_right")
 	velocity.x = direction * speed
 
-	# ----- Gravité -----
 	if not is_on_floor():
 		velocity.y += gravity * delta
 	else:
-		# Reset vertical velocity when on floor
 		velocity.y = 0
 
-	# ----- Saut -----
-	if Input.is_action_just_pressed("ui_up") and is_on_floor():
-		velocity.y = jump_velocity
-		double_jump = 1
-		
-	if Input.is_action_just_pressed("ui_up") and !is_on_floor():
-		if double_jump==1: 
-			double_jump = 0
+	if Input.is_action_just_pressed("ui_up"):
+		if is_on_floor():
 			velocity.y = jump_velocity
+			double_jump = 1
+		elif double_jump == 1:
+			velocity.y = jump_velocity
+			double_jump = 0
 
-	# ----- Appliquer mouvement -----
 	move_and_slide()
-	# À la fin de _physics_process(delta), après move_and_slide()
+
 	if direction != 0:
 		sprite.scale.x = abs(sprite.scale.x) * -sign(direction)
