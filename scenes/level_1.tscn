@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://bsjc5bd1owtne" path="res://scenes/area_2d.gd" id="3_rus8k"]
 [ext_resource type="PackedScene" uid="uid://ct0ki0rvttwr1" path="res://scenes/player.tscn" id="4_5xbjy"]
 [ext_resource type="Script" uid="uid://0vqfe7qwxhe8" path="res://scenes/kill_zone.gd" id="5_4nkto"]
+[ext_resource type="Script" uid="uid://cnfnuqb28gwtl" path="res://scenes/fin_niveau.gd" id="6_fcfvj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gkh53"]
 size = Vector2(1153, 19)
@@ -36,6 +37,9 @@ size = Vector2(125.125, 26)
 [sub_resource type="Environment" id="Environment_fcfvj"]
 glow_enabled = true
 glow_hdr_threshold = 2.32
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pa8r4"]
+size = Vector2(90, 168)
 
 [node name="Level1" type="Node2D" unique_id=1335290165]
 position = Vector2(4, -2)
@@ -137,14 +141,14 @@ platforms_parent = NodePath("../reveal_platform")
 
 [node name="PointLight2D" type="PointLight2D" parent="Area2D" unique_id=1533822326]
 z_index = 1
-position = Vector2(373.00006, 628.4219)
-scale = Vector2(0.103027344, 0.03207398)
-color = Color(1.1288555, 1.1288555, 0.32355654, 0.85490197)
+position = Vector2(373.00006, 579.9219)
+scale = Vector2(0.103027344, 0.1268005)
+color = Color(1.5565991, 1.5565991, 1.5565991, 1)
 energy = 16.0
 texture = ExtResource("3_4nkto")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=24848970]
-position = Vector2(371, 553)
+position = Vector2(372, 553)
 shape = SubResource("RectangleShape2D_fcfvj")
 
 [node name="Player" parent="." unique_id=874490068 groups=["player"] instance=ExtResource("4_5xbjy")]
@@ -210,6 +214,13 @@ position = Vector2(92, 582)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2060796725]
 environment = SubResource("Environment_fcfvj")
+
+[node name="FinNiveau" type="Area2D" parent="." unique_id=1224987039]
+script = ExtResource("6_fcfvj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FinNiveau" unique_id=15041161]
+position = Vector2(1091, 113)
+shape = SubResource("RectangleShape2D_pa8r4")
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]
