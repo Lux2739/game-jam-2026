@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var next_level_path2 = preload("res://scenes/level_5.tscn")
+@export var next_level_path2 = preload("res://scenes/level_3.tscn")
 func _ready():
 	body_entered.connect(_on_body_entered)
 func _on_body_entered(body):

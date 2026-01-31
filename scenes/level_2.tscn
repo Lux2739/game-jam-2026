@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://ct0ki0rvttwr1" path="res://scenes/player.tscn" id="4_ne2mo"]
 [ext_resource type="Script" uid="uid://0vqfe7qwxhe8" path="res://scenes/kill_zone.gd" id="5_6cvei"]
 [ext_resource type="Texture2D" uid="uid://cocynij1r5esn" path="res://assets/cage.png" id="7_ne2mo"]
-[ext_resource type="Script" uid="uid://de5rqrkskyi6a" path="res://scenes/fin_niveau_2.gd" id="7_y0kc7"]
+[ext_resource type="Script" uid="uid://daq1jufvt0r23" path="res://scenes/fin_2555565665s.gd" id="7_y0kc7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gkh53"]
 size = Vector2(1153, 19)
@@ -14,7 +14,7 @@ size = Vector2(1153, 19)
 [sub_resource type="NoiseTexture2D" id="NoiseTexture2D_014kd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5xbjy"]
-size = Vector2(77.625, 27.5)
+size = Vector2(76.65636, 29)
 
 [sub_resource type="NoiseTexture2D" id="NoiseTexture2D_4nkto"]
 
@@ -27,7 +27,7 @@ size = Vector2(122, 23)
 size = Vector2(99.5, 146.5)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_que50"]
-radius = 132.01515
+radius = 132.42357
 
 [sub_resource type="Environment" id="Environment_fcfvj"]
 glow_enabled = true
@@ -100,7 +100,7 @@ visible = false
 position = Vector2(4, 0)
 
 [node name="platform8" type="StaticBody2D" parent="reveal_platform" unique_id=186561940]
-position = Vector2(159, -227)
+position = Vector2(213, -343)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform8" unique_id=810958766]
 position = Vector2(281.5, 539)
@@ -112,7 +112,7 @@ scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
 [node name="platform9" type="StaticBody2D" parent="reveal_platform" unique_id=397247130]
-position = Vector2(-78, -287)
+position = Vector2(70, -335)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform9" unique_id=1033504992]
 position = Vector2(281.5, 539)
@@ -124,7 +124,7 @@ scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
 [node name="platform10" type="StaticBody2D" parent="reveal_platform" unique_id=2490641]
-position = Vector2(-241, -203)
+position = Vector2(-12, -269)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform10" unique_id=1779070733]
 position = Vector2(281.5, 539)
@@ -136,7 +136,7 @@ scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
 [node name="platform15" type="StaticBody2D" parent="reveal_platform" unique_id=950867516]
-position = Vector2(458, -137)
+position = Vector2(-44, -195)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform15" unique_id=238611288]
 position = Vector2(281.5, 539)
@@ -148,7 +148,8 @@ scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
 [node name="platform16" type="StaticBody2D" parent="reveal_platform" unique_id=915356862]
-position = Vector2(550, -109)
+position = Vector2(706, 190)
+rotation = 1.5707964
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform16" unique_id=997071283]
 position = Vector2(281.5, 539)
@@ -159,32 +160,17 @@ position = Vector2(281.99997, 539.00006)
 scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
-[node name="platform17" type="StaticBody2D" parent="reveal_platform" unique_id=1263743536]
-position = Vector2(659, -160)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform17" unique_id=2113283298]
-position = Vector2(281.5, 539)
-shape = SubResource("RectangleShape2D_5xbjy")
-
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform17" unique_id=1187313122]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
-
 [node name="platform18" type="StaticBody2D" parent="reveal_platform" unique_id=178388988]
-position = Vector2(738, -228)
+position = Vector2(1143, 147)
+rotation = 1.5707964
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform18" unique_id=866612544]
 position = Vector2(281.5, 539)
 shape = SubResource("RectangleShape2D_5xbjy")
 
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform18" unique_id=325074375]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
-
 [node name="platform19" type="StaticBody2D" parent="reveal_platform" unique_id=1726374769]
-position = Vector2(635, -344)
+position = Vector2(1073.0001, -326)
+rotation = 0.98611104
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform19" unique_id=1469021097]
 position = Vector2(281.5, 539)
@@ -195,8 +181,22 @@ position = Vector2(281.99997, 539.00006)
 scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
+[node name="platform20" type="StaticBody2D" parent="reveal_platform" unique_id=862305595]
+position = Vector2(1446, -158)
+rotation = 1.5707964
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform20" unique_id=2129206360]
+position = Vector2(281.5, 539)
+shape = SubResource("RectangleShape2D_5xbjy")
+
+[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform20" unique_id=1981613881]
+position = Vector2(281.99997, 539.00006)
+scale = Vector2(0.14868161, 0.051757835)
+texture = SubResource("NoiseTexture2D_4nkto")
+
 [node name="platform11" type="StaticBody2D" parent="reveal_platform" unique_id=127934738]
-position = Vector2(-103, 63)
+position = Vector2(1195, 21)
+rotation = 1.5707964
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform11" unique_id=664122500]
 position = Vector2(281.5, 539)
@@ -208,7 +208,8 @@ scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
 [node name="platform12" type="StaticBody2D" parent="reveal_platform" unique_id=908732534]
-position = Vector2(-107, -100)
+position = Vector2(794, 277)
+rotation = 1.5707964
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform12" unique_id=1012250291]
 position = Vector2(281.5, 539)
@@ -220,25 +221,13 @@ scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
 [node name="platform13" type="StaticBody2D" parent="reveal_platform" unique_id=1939385984]
-position = Vector2(-235, -21)
+position = Vector2(75, 68)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform13" unique_id=684193777]
 position = Vector2(281.5, 539)
 shape = SubResource("RectangleShape2D_5xbjy")
 
 [node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform13" unique_id=1711850649]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
-
-[node name="platform14" type="StaticBody2D" parent="reveal_platform" unique_id=1756962415]
-position = Vector2(214, -90)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform14" unique_id=1781800428]
-position = Vector2(281.5, 539)
-shape = SubResource("RectangleShape2D_5xbjy")
-
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform14" unique_id=1720700220]
 position = Vector2(281.99997, 539.00006)
 scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
@@ -261,7 +250,7 @@ texture = ExtResource("7_ne2mo")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1026857066 node_paths=PackedStringArray("platforms_parent")]
 modulate = Color(2.055, 2.055, 2.055, 1)
-position = Vector2(714, 19)
+position = Vector2(-332, 19)
 script = ExtResource("2_wo48x")
 platforms_parent = NodePath("../reveal_platform")
 
@@ -278,10 +267,10 @@ position = Vector2(372, 553)
 shape = SubResource("RectangleShape2D_fcfvj")
 
 [node name="Player" parent="." unique_id=874490068 groups=["player"] instance=ExtResource("4_ne2mo")]
-position = Vector2(295, 273)
+position = Vector2(85, 269)
 
 [node name="killZone" type="Area2D" parent="." unique_id=1919892500]
-position = Vector2(45, -11)
+position = Vector2(70, 134)
 script = ExtResource("5_6cvei")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killZone" unique_id=1333061443]
@@ -289,22 +278,82 @@ position = Vector2(718, 183)
 shape = SubResource("CircleShape2D_que50")
 
 [node name="PointLight2D" type="PointLight2D" parent="killZone" unique_id=659070296]
-position = Vector2(718.00006, 196)
-scale = Vector2(0.23867789, 0.22915646)
+position = Vector2(721, 188.99998)
+scale = Vector2(0.27832025, 0.27734375)
+color = Color(18.892157, 0, 0, 1)
+energy = 1.74
+texture = ExtResource("3_y0kc7")
+
+[node name="killZone3" type="Area2D" parent="." unique_id=945054658]
+position = Vector2(-151, 376)
+script = ExtResource("5_6cvei")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="killZone3" unique_id=473995244]
+position = Vector2(718, 183)
+shape = SubResource("CircleShape2D_que50")
+
+[node name="PointLight2D" type="PointLight2D" parent="killZone3" unique_id=1190123244]
+position = Vector2(721, 188.99998)
+scale = Vector2(0.27832025, 0.27734375)
+color = Color(18.892157, 0, 0, 1)
+energy = 1.74
+texture = ExtResource("3_y0kc7")
+
+[node name="killZone4" type="Area2D" parent="." unique_id=1040839352]
+position = Vector2(61, 372)
+script = ExtResource("5_6cvei")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="killZone4" unique_id=1292723357]
+position = Vector2(718, 183)
+shape = SubResource("CircleShape2D_que50")
+
+[node name="PointLight2D" type="PointLight2D" parent="killZone4" unique_id=2035146511]
+position = Vector2(721, 188.99998)
+scale = Vector2(0.27832025, 0.27734375)
+color = Color(18.892157, 0, 0, 1)
+energy = 1.74
+texture = ExtResource("3_y0kc7")
+
+[node name="killZone5" type="Area2D" parent="." unique_id=2086304897]
+position = Vector2(282, 370)
+script = ExtResource("5_6cvei")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="killZone5" unique_id=246050400]
+position = Vector2(718, 183)
+shape = SubResource("CircleShape2D_que50")
+
+[node name="PointLight2D" type="PointLight2D" parent="killZone5" unique_id=1970386089]
+position = Vector2(721, 188.99998)
+scale = Vector2(0.27832025, 0.27734375)
+color = Color(18.892157, 0, 0, 1)
+energy = 1.74
+texture = ExtResource("3_y0kc7")
+
+[node name="killZone6" type="Area2D" parent="." unique_id=1551534697]
+position = Vector2(282, 370)
+script = ExtResource("5_6cvei")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="killZone6" unique_id=489949653]
+position = Vector2(718, 183)
+shape = SubResource("CircleShape2D_que50")
+
+[node name="PointLight2D" type="PointLight2D" parent="killZone6" unique_id=1180698804]
+position = Vector2(721, 188.99998)
+scale = Vector2(0.27832025, 0.27734375)
 color = Color(18.892157, 0, 0, 1)
 energy = 1.74
 texture = ExtResource("3_y0kc7")
 
 [node name="killZone2" type="Area2D" parent="." unique_id=673372212]
-position = Vector2(-354, 225)
+position = Vector2(-341, 116)
 script = ExtResource("5_6cvei")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killZone2" unique_id=1820709745]
-position = Vector2(721, 220)
+position = Vector2(719, 216)
 shape = SubResource("CircleShape2D_que50")
 
 [node name="PointLight2D" type="PointLight2D" parent="killZone2" unique_id=67604281]
-position = Vector2(725, 221.99998)
+position = Vector2(720, 214.99998)
 scale = Vector2(0.29003906, 0.274414)
 color = Color(18.892157, 0, 0, 1)
 energy = 1.74
@@ -316,11 +365,11 @@ position = Vector2(367, 630)
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2060796725]
 environment = SubResource("Environment_fcfvj")
 
-[node name="FinNiveau2" type="Area2D" parent="." unique_id=379918643]
+[node name="FIN2555565665s" type="Area2D" parent="." unique_id=379918643]
 position = Vector2(-6, -10)
 script = ExtResource("7_y0kc7")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="FinNiveau2" unique_id=175858394]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FIN2555565665s" unique_id=175858394]
 position = Vector2(1087, 87.5)
 shape = SubResource("RectangleShape2D_pa8r4")
 
