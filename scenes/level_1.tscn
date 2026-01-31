@@ -144,7 +144,7 @@ energy = 16.0
 texture = ExtResource("3_4nkto")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=24848970]
-position = Vector2(371.25, 556.25)
+position = Vector2(371, 553)
 shape = SubResource("RectangleShape2D_fcfvj")
 
 [node name="Player" parent="." unique_id=874490068 groups=["player"] instance=ExtResource("4_5xbjy")]
