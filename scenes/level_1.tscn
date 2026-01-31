@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://j62f5sp3dsc5"]
 
-[ext_resource type="Script" uid="uid://tvnu16mrh610" path="res://scenes/level_1.gd" id="1_5xbjy"]
 [ext_resource type="Texture2D" uid="uid://lctg45bnh1vv" path="res://assets/bg1.webp" id="1_014kd"]
 [ext_resource type="Script" uid="uid://bsjc5bd1owtne" path="res://scenes/area_2d.gd" id="3_rus8k"]
 [ext_resource type="Texture2D" uid="uid://sr72w7fpq5d2" path="res://assets/realistic-digital-lens-flare-light-effect-free-png.png" id="4_4nkto"]
@@ -21,7 +20,6 @@ radius = 43.382023
 
 [node name="Level1" type="Node2D" unique_id=1335290165]
 position = Vector2(4, -2)
-script = ExtResource("1_5xbjy")
 
 [node name="sol" type="StaticBody2D" parent="." unique_id=1484616053]
 
@@ -80,7 +78,6 @@ offset_bottom = 723.0
 texture = ExtResource("1_014kd")
 
 [node name="reveal_platform" type="Node2D" parent="." unique_id=640354119]
-visible = false
 position = Vector2(1, 0)
 
 [node name="platform1" type="StaticBody2D" parent="reveal_platform" unique_id=1565205328]
