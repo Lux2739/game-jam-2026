@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://hlktoqx0sw64"]
+
+[ext_resource type="Script" uid="uid://bjp66e8tlmqrq" path="res://scenes/menu.gd" id="1_yqeox"]
+
+[sub_resource type="Gradient" id="Gradient_yqeox"]
+offsets = PackedFloat32Array(0.2264151, 0.36792454, 0.4811321, 0.990566, 1)
+colors = PackedColorArray(0, 0, 0.47301394, 1, 0, 0, 0.3074591, 1, 0, 0, 0, 1, 0, 0, 0.7647059, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_vjb58"]
+gradient = SubResource("Gradient_yqeox")
+
+[sub_resource type="FontVariation" id="FontVariation_con2f"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_mhnvy"]
+font = SubResource("FontVariation_con2f")
+font_size = 64
+
+[node name="Menu" type="Control" unique_id=1007011894]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_yqeox")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1734743723]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1112.0
+offset_bottom = 608.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture1D_vjb58")
+
+[node name="Label" type="Label" parent="." unique_id=2025963372]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 306.0
+offset_top = 162.0
+offset_right = 841.0
+offset_bottom = 250.0
+grow_horizontal = 2
+text = "MENU PRINCIPAL"
+label_settings = SubResource("LabelSettings_mhnvy")
+
+[node name="Start" type="Button" parent="." unique_id=169138370]
+layout_mode = 0
+offset_left = 427.0
+offset_top = 327.0
+offset_right = 539.0
+offset_bottom = 384.0
+theme_override_font_sizes/font_size = 35
+text = "START"
+
+[node name="quit" type="Button" parent="." unique_id=1079504942]
+layout_mode = 0
+offset_left = 609.0
+offset_top = 328.0
+offset_right = 701.0
+offset_bottom = 385.0
+theme_override_font_sizes/font_size = 35
+text = "QUIT
+"
+
+[connection signal="button_down" from="Start" to="." method="_on_start_button_down"]
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="button_down" from="quit" to="." method="_on_quit_button_down"]
