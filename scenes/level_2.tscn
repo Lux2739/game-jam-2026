@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://lctg45bnh1vv" path="res://assets/bg1.webp" id="1_b4j7a"]
 [ext_resource type="Script" uid="uid://jcvmfs7bofsw" path="res://scenes/level_2.gd" id="1_ne2mo"]
 [ext_resource type="Script" uid="uid://bsjc5bd1owtne" path="res://scenes/area_2d.gd" id="2_wo48x"]
+[ext_resource type="Texture2D" uid="uid://bepnbj74kjfvs" path="res://assets/neon(2).png" id="3_que50"]
 [ext_resource type="Texture2D" uid="uid://b57ohx4mp6uwc" path="res://assets/light.png" id="3_y0kc7"]
 [ext_resource type="PackedScene" uid="uid://ct0ki0rvttwr1" path="res://scenes/player.tscn" id="4_ne2mo"]
 [ext_resource type="Script" uid="uid://0vqfe7qwxhe8" path="res://scenes/kill_zone.gd" id="5_6cvei"]
@@ -21,8 +22,6 @@ size = Vector2(76.65636, 29)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6cvei"]
 size = Vector2(122, 23)
-
-[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_que50"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fcfvj"]
 size = Vector2(99.5, 146.5)
@@ -99,7 +98,6 @@ offset_bottom = 722.0
 texture = ExtResource("1_b4j7a")
 
 [node name="reveal_platform" type="Node2D" parent="." unique_id=640354119]
-visible = false
 position = Vector2(4, 0)
 
 [node name="platform8" type="StaticBody2D" parent="reveal_platform" unique_id=186561940]
@@ -109,10 +107,18 @@ position = Vector2(213, -343)
 position = Vector2(281.5, 539)
 shape = SubResource("RectangleShape2D_5xbjy")
 
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform8" unique_id=1883299363]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
+[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform8" unique_id=406416676]
+position = Vector2(273.1229, 529)
+rotation = 1.5707964
+scale = Vector2(0.41135803, 0.1279372)
+texture = ExtResource("3_que50")
+
+[node name="PointLight2D" type="PointLight2D" parent="reveal_platform/platform8" unique_id=1992624853]
+position = Vector2(282, 540)
+scale = Vector2(0.17016602, 0.055053663)
+color = Color(0.838, 0.049, 1.432, 1)
+energy = 3.15
+texture = ExtResource("3_y0kc7")
 
 [node name="platform9" type="StaticBody2D" parent="reveal_platform" unique_id=397247130]
 position = Vector2(70, -335)
@@ -133,10 +139,18 @@ position = Vector2(-12, -269)
 position = Vector2(281.5, 539)
 shape = SubResource("RectangleShape2D_5xbjy")
 
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform10" unique_id=2000687016]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
+[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform10" unique_id=1556933507]
+position = Vector2(276.79196, 529)
+rotation = 1.5707964
+scale = Vector2(0.41135803, 0.11943413)
+texture = ExtResource("3_que50")
+
+[node name="PointLight2D" type="PointLight2D" parent="reveal_platform/platform10" unique_id=1909776824]
+position = Vector2(282, 540)
+scale = Vector2(0.17016602, 0.055053663)
+color = Color(0.838, 0.049, 1.432, 1)
+energy = 3.15
+texture = ExtResource("3_y0kc7")
 
 [node name="platform15" type="StaticBody2D" parent="reveal_platform" unique_id=950867516]
 position = Vector2(-44, -195)
@@ -145,10 +159,18 @@ position = Vector2(-44, -195)
 position = Vector2(281.5, 539)
 shape = SubResource("RectangleShape2D_5xbjy")
 
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform15" unique_id=1861233582]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
+[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform15" unique_id=1448385627]
+position = Vector2(275.66302, 529)
+rotation = 1.5707964
+scale = Vector2(0.41135803, 0.122050464)
+texture = ExtResource("3_que50")
+
+[node name="PointLight2D" type="PointLight2D" parent="reveal_platform/platform15" unique_id=2093987587]
+position = Vector2(282, 540)
+scale = Vector2(0.17016602, 0.055053663)
+color = Color(0.838, 0.049, 1.432, 1)
+energy = 3.15
+texture = ExtResource("3_y0kc7")
 
 [node name="platform16" type="StaticBody2D" parent="reveal_platform" unique_id=915356862]
 position = Vector2(706, 190)
@@ -158,18 +180,18 @@ rotation = 1.5707964
 position = Vector2(281.5, 539)
 shape = SubResource("RectangleShape2D_5xbjy")
 
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform16" unique_id=202483564]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
-
-[node name="platform18" type="StaticBody2D" parent="reveal_platform" unique_id=178388988]
-position = Vector2(1143, 147)
+[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform16" unique_id=325553565]
+position = Vector2(273.81348, 529)
 rotation = 1.5707964
+scale = Vector2(0.41135803, 0.12928982)
+texture = ExtResource("3_que50")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform18" unique_id=866612544]
-position = Vector2(281.5, 539)
-shape = SubResource("RectangleShape2D_5xbjy")
+[node name="PointLight2D" type="PointLight2D" parent="reveal_platform/platform16" unique_id=461625555]
+position = Vector2(282, 540)
+scale = Vector2(0.17016602, 0.055053663)
+color = Color(0.838, 0.049, 1.432, 1)
+energy = 3.15
+texture = ExtResource("3_y0kc7")
 
 [node name="platform19" type="StaticBody2D" parent="reveal_platform" unique_id=1726374769]
 position = Vector2(1073.0001, -326)
@@ -192,10 +214,18 @@ rotation = 1.5707964
 position = Vector2(281.5, 539)
 shape = SubResource("RectangleShape2D_5xbjy")
 
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform20" unique_id=1981613881]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
+[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform20" unique_id=1543139527]
+position = Vector2(272.9777, 531)
+rotation = 1.5707964
+scale = Vector2(0.41135803, 0.12834464)
+texture = ExtResource("3_que50")
+
+[node name="PointLight2D" type="PointLight2D" parent="reveal_platform/platform20" unique_id=390685275]
+position = Vector2(282, 540)
+scale = Vector2(0.17016602, 0.055053663)
+color = Color(0.838, 0.049, 1.432, 1)
+energy = 3.15
+texture = ExtResource("3_y0kc7")
 
 [node name="platform11" type="StaticBody2D" parent="reveal_platform" unique_id=127934738]
 position = Vector2(1195, 21)
@@ -205,12 +235,21 @@ rotation = 1.5707964
 position = Vector2(281.5, 539)
 shape = SubResource("RectangleShape2D_5xbjy")
 
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform11" unique_id=1304242439]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
+[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform11" unique_id=1497997050]
+position = Vector2(279.16992, 528.99994)
+rotation = 1.5707964
+scale = Vector2(0.41135803, 0.13636325)
+texture = ExtResource("3_que50")
+
+[node name="PointLight2D" type="PointLight2D" parent="reveal_platform/platform11" unique_id=2115041480]
+position = Vector2(282, 540)
+scale = Vector2(0.17016602, 0.055053663)
+color = Color(0.838, 0.049, 1.432, 1)
+energy = 3.15
+texture = ExtResource("3_y0kc7")
 
 [node name="platform12" type="StaticBody2D" parent="reveal_platform" unique_id=908732534]
+visible = false
 position = Vector2(794, 277)
 rotation = 1.5707964
 
@@ -218,10 +257,18 @@ rotation = 1.5707964
 position = Vector2(281.5, 539)
 shape = SubResource("RectangleShape2D_5xbjy")
 
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform12" unique_id=1939722461]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
+[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform12" unique_id=1831156032]
+position = Vector2(273.92914, 529)
+rotation = 1.5707964
+scale = Vector2(0.41135803, 0.12491169)
+texture = ExtResource("3_que50")
+
+[node name="PointLight2D" type="PointLight2D" parent="reveal_platform/platform12" unique_id=1985608308]
+position = Vector2(282, 540)
+scale = Vector2(0.17016602, 0.055053663)
+color = Color(0.838, 0.049, 1.432, 1)
+energy = 3.15
+texture = ExtResource("3_y0kc7")
 
 [node name="platform13" type="StaticBody2D" parent="reveal_platform" unique_id=1939385984]
 position = Vector2(75, 68)
@@ -230,10 +277,18 @@ position = Vector2(75, 68)
 position = Vector2(281.5, 539)
 shape = SubResource("RectangleShape2D_5xbjy")
 
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform13" unique_id=1711850649]
-position = Vector2(281.99997, 539.00006)
-scale = Vector2(0.14868161, 0.051757835)
-texture = SubResource("NoiseTexture2D_4nkto")
+[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/platform13" unique_id=1976269836]
+position = Vector2(276, 528)
+rotation = 1.5707964
+scale = Vector2(0.41135803, 0.12908302)
+texture = ExtResource("3_que50")
+
+[node name="PointLight2D" type="PointLight2D" parent="reveal_platform/platform13" unique_id=37311846]
+position = Vector2(282, 540)
+scale = Vector2(0.17016602, 0.055053663)
+color = Color(0.838, 0.049, 1.432, 1)
+energy = 3.15
+texture = ExtResource("3_y0kc7")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="reveal_platform" unique_id=1814485211]
 
@@ -241,10 +296,18 @@ texture = SubResource("NoiseTexture2D_4nkto")
 position = Vector2(1079, 142.5)
 shape = SubResource("RectangleShape2D_6cvei")
 
-[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/StaticBody2D" unique_id=1095076747]
-position = Vector2(1079.0001, 142.625)
-scale = Vector2(0.23828107, 0.044433594)
-texture = SubResource("NoiseTexture2D_que50")
+[node name="Sprite2D" type="Sprite2D" parent="reveal_platform/StaticBody2D" unique_id=938699252]
+position = Vector2(1067, 134)
+rotation = 1.5707964
+scale = Vector2(0.41135803, 0.2025564)
+texture = ExtResource("3_que50")
+
+[node name="PointLight2D" type="PointLight2D" parent="reveal_platform/StaticBody2D" unique_id=2090587608]
+position = Vector2(1080, 143)
+scale = Vector2(0.20324707, 0.055053663)
+color = Color(0.838, 0.049, 1.432, 1)
+energy = 3.15
+texture = ExtResource("3_y0kc7")
 
 [node name="Sprite2D" type="Sprite2D" parent="reveal_platform" unique_id=1182610358]
 position = Vector2(1092.0001, 79.00003)
