@@ -1,0 +1,100 @@
+[gd_scene format=3 uid="uid://4xby8ptef5gn"]
+
+[ext_resource type="Script" path="res://key.gd" id="1_up4cr"]
+
+[sub_resource type="Gradient" id="Gradient_7ltq3"]
+interpolation_mode = 1
+offsets = PackedFloat32Array(0, 0.006024096, 0.18072289, 0.5421687, 0.5481928, 1)
+colors = PackedColorArray(0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1)
+metadata/_snap_count = 2
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_up4cr"]
+gradient = SubResource("Gradient_7ltq3")
+
+[node name="key" type="Control" unique_id=1039000715]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_up4cr")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=614250748]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture1D_up4cr")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1016810131]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -52.0
+offset_right = 20.0
+offset_bottom = 52.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1496707187]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Droite : D/Fleche Droite"
+
+[node name="Label2" type="Label" parent="VBoxContainer" unique_id=283175784]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Gauche : Q/Fleche Gauche"
+
+[node name="Label3" type="Label" parent="VBoxContainer" unique_id=1859883944]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Saut :  Z/Espace/J/Fleche Haut"
+
+[node name="Label4" type="Label" parent="VBoxContainer" unique_id=1868641746]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Pause : Echap"
+
+[node name="Label" type="Label" parent="." unique_id=1647221489]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -96.0
+offset_top = 89.0
+offset_right = 110.0
+offset_bottom = 152.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 45
+text = "TOUCHE :"
+
+[node name="Button" type="Button" parent="." unique_id=324699671]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -106.0
+offset_top = -128.0
+offset_right = 98.0
+offset_bottom = -85.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 25
+text = "Retour au menu"
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]

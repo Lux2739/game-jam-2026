@@ -1,19 +1,10 @@
 extends Control
 
-func _ready():
-	# Connecter les boutons
-	$Panel/VBoxContainer/ResumeButton.pressed.connect(_on_resume_pressed)
-	$Panel/VBoxContainer/MainMenuButton.pressed.connect(_on_main_menu_pressed)
-	
-	# Commence caché
-	visible = false
-
-# --- Appuyer sur "Reprendre"
-func _on_resume_pressed():
-	hide()
+func _on_resume_button_button_down() -> void:
 	get_tree().paused = false
+	queue_free()
 
-# --- Appuyer sur "Menu Principal"
-func _on_main_menu_pressed():
+
+func _on_main_menu_button_button_down() -> void:
 	get_tree().paused = false
-	get_tree().change_scene("res://scenes/MainMenu.tscn")  # Mettre le chemin de ton menu principal
+	get_tree().change_scene_to_file("res://scenes/menu.tscn")

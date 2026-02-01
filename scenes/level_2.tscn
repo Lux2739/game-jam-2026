@@ -38,6 +38,7 @@ glow_hdr_threshold = 2.32
 size = Vector2(114, 103)
 
 [node name="Level2" type="Node2D" unique_id=1335290165]
+process_mode = 3
 position = Vector2(4, -2)
 script = ExtResource("1_ne2mo")
 
@@ -376,7 +377,8 @@ position = Vector2(1087, 87.5)
 shape = SubResource("RectangleShape2D_pa8r4")
 
 [node name="TimerLabel2" type="Label" parent="." unique_id=379658253]
-offset_right = 40.0
+offset_left = 6.0
+offset_right = 46.0
 offset_bottom = 23.0
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

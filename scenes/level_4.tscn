@@ -38,6 +38,7 @@ glow_hdr_threshold = 2.32
 size = Vector2(114, 103)
 
 [node name="Level4" type="Node2D" unique_id=1335290165]
+process_mode = 3
 position = Vector2(4, -2)
 script = ExtResource("1_qsmat")
 
@@ -98,6 +99,7 @@ offset_bottom = 722.0
 texture = ExtResource("1_x7blo")
 
 [node name="reveal_platform" type="Node2D" parent="." unique_id=640354119]
+visible = false
 position = Vector2(4, 0)
 
 [node name="platform8" type="StaticBody2D" parent="reveal_platform" unique_id=186561940]
@@ -225,7 +227,7 @@ scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
 [node name="platform20" type="StaticBody2D" parent="reveal_platform" unique_id=1753771565]
-position = Vector2(1495, 28)
+position = Vector2(1511, 25)
 rotation = 1.5707964
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform20" unique_id=2079583549]
@@ -251,7 +253,7 @@ scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
 [node name="platform22" type="StaticBody2D" parent="reveal_platform" unique_id=1274281271]
-position = Vector2(1429, -110)
+position = Vector2(1472, -69)
 rotation = 1.5707964
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform22" unique_id=366708989]
@@ -387,11 +389,11 @@ position = Vector2(102, 34)
 script = ExtResource("6_7ewpb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killZone3" unique_id=1576311427]
-position = Vector2(721, 220)
+position = Vector2(720, 215)
 shape = SubResource("CircleShape2D_que50")
 
 [node name="PointLight2D" type="PointLight2D" parent="killZone3" unique_id=984998797]
-position = Vector2(725, 221.99998)
+position = Vector2(726, 221)
 scale = Vector2(0.29003906, 0.274414)
 color = Color(18.892157, 0, 0, 1)
 energy = 1.74

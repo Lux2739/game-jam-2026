@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://uhvmrs6golf"]
 
-[ext_resource type="Script" uid="uid://bkvxqbem0oxvg" path="res://endscreen.gd" id="1_dt0yg"]
+[ext_resource type="Script" uid="uid://b47x4xwfqid46" path="res://endscreen.gd" id="1_dt0yg"]
 
 [node name="Endscreen" type="Control" unique_id=363204762]
 layout_mode = 3
@@ -39,10 +39,28 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -453.0
-offset_top = -287.0
-offset_right = 505.0
-offset_bottom = -153.0
+offset_left = -268.0
+offset_top = -298.0
+offset_right = 690.0
+offset_bottom = -164.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 50
+
+[node name="Button2" type="Button" parent="." unique_id=1602880241]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -140.0
+offset_top = -158.0
+offset_right = 142.0
+offset_bottom = -101.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 35
+text = "Retour au menu"
+
+[connection signal="button_down" from="Button2" to="." method="_on_button_2_button_down"]

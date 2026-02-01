@@ -38,6 +38,7 @@ glow_hdr_threshold = 2.32
 size = Vector2(114, 103)
 
 [node name="Level3" type="Node2D" unique_id=1335290165]
+process_mode = 3
 position = Vector2(4, -2)
 script = ExtResource("1_wae8j")
 
@@ -138,7 +139,7 @@ scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
 [node name="platform15" type="StaticBody2D" parent="reveal_platform" unique_id=950867516]
-position = Vector2(458, -137)
+position = Vector2(460, -132)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform15" unique_id=238611288]
 position = Vector2(281.5, 539)
@@ -198,7 +199,7 @@ scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
 [node name="platform11" type="StaticBody2D" parent="reveal_platform" unique_id=127934738]
-position = Vector2(-103, 63)
+position = Vector2(-176, 93)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform11" unique_id=664122500]
 position = Vector2(281.5, 539)
@@ -210,7 +211,7 @@ scale = Vector2(0.14868161, 0.051757835)
 texture = SubResource("NoiseTexture2D_4nkto")
 
 [node name="platform12" type="StaticBody2D" parent="reveal_platform" unique_id=908732534]
-position = Vector2(-107, -100)
+position = Vector2(-84, -100)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="reveal_platform/platform12" unique_id=1012250291]
 position = Vector2(281.5, 539)
